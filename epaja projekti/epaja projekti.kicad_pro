@@ -280,6 +280,26 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "3.3V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(255, 153, 0)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "5V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(255, 0, 0)",
+        "tuning_profile": "",
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -287,7 +307,12 @@
     },
     "net_colors": {},
     "netclass_assignments": {},
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "3.3V",
+        "pattern": "*3.3V*"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -430,7 +455,7 @@
         "uuid": "3e5c196e-29fb-42eb-bc67-3bc00989226a"
       }
     ],
-    "used_designators": "BT1-4,C1-4,D1,LS1,MT1,PAM1,PCM1,R1-7,RV1-4,RX1-2,SW1,TP1,U1-6",
+    "used_designators": "#PWR1-19,BT1-4,C1-6,D1,LS1,MT1,PAM1,PCM1,R1-8,RV1-4,RX1-2,SW1,TP1,U1-6",
     "variants": []
   },
   "sheets": [
